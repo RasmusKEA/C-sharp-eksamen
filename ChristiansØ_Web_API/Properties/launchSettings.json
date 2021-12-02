@@ -20,8 +20,8 @@
     "ChristiansØ_Web_API": {
       "commandName": "Project",
       "dotnetRunMessages": "true",
-      "launchBrowser": true,
-      "launchUrl": "api/product",
+      "launchBrowser": false,
+      "launchUrl": "api/user",
       "applicationUrl": "https://localhost:5001;http://localhost:5000",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"

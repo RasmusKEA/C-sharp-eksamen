@@ -1,26 +1,11 @@
 require('dotenv').config()
 const express = require("express")
 const app = express()
-const cookieParser = require("cookie-parser");
-const sessions = require('express-session');
 
 app.use(express.static("public"));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-
-const oneDay = 1000 * 60 * 60 * 24;
-//session middleware
-app.use(sessions({
-    secret: process.env.ACCESS_TOKEN_SECRET,
-    rolling: true,
-    saveUninitialized:true,
-    cookie: { maxAge: oneDay },
-    resave: false
-}));
-
-app.use(cookieParser());
-var session;
 
 
 const { createPage } = require("./render.js");
@@ -50,11 +35,14 @@ app.get('/map', (req, res) =>{
 })
 
 app.get('/login', (req, res) =>{
-    res.send(loginPage)
+
+        res.send(loginPage)
+
 })
 
 app.get('/admin', (req, res) =>{
-    res.send(adminPage)
+        res.send(adminPage)
+    
 })
 
 
