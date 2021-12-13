@@ -1,6 +1,9 @@
+let url = 'http://localhost:5000/api/user/verifyuser'
+
 function loginUser() {
     if(document.getElementById("username").value !== '' && document.getElementById("password").value !== ''){
-        fetch("https://localhost:5001/api/user/verifyuser", {
+        console.log(url)
+        fetch(url, {
             method: "POST",
             headers: { "Content-type": "application/json; charset=UTF-8" },
             body: JSON.stringify({
