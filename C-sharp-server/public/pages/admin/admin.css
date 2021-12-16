@@ -1,0 +1,77 @@
+.container-1{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.tour-container{
+    margin-top: 25px;
+    width: 80%;
+    display: flex;
+}
+
+.tour-container.wrap{
+    flex-wrap: wrap;
+}
+
+.tour-div{
+    width: 30%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 25px;
+    border: 2px solid var(--primary);
+    border-left: 3px solid var(--primary);
+    color: var(--light);
+    overflow: auto;
+}
+
+.tour-div p{
+    color: var(--dark);
+    margin-left: 10px;
+}
+
+.tour-div h4{
+    color: var(--dark);
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.dl-cv{
+    background-color: #417e38;
+    border-color: #417e38;
+}
+
+.dl-cv:hover{
+    background-color: #4fa042;
+    border-color: #4fa042;
+}
+
+.dl-cv:active{
+    background-color: #4fa042 !important;
+    border-color: #4fa042 !important;
+}
+
+.dl-cv:focus{
+    background-color: #417e38 !important;
+    border-color: #417e38 !important;
+    outline: 0; 
+    box-shadow: none;
+}
+
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn.focus:active, .btn:active:focus, .btn:focus{
+    outline: 0; 
+    box-shadow: none; 
+}
+
+.edit-button, .delete-button{
+    width: 75px;
+    margin: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.create-button{
+    margin-top: 15px;
+    margin-left: 15px;
+}

@@ -17,6 +17,9 @@ const toursPage = createPage('tours/tours.html')
 const mapPage = createPage('map/map.html')
 const loginPage = createPage('login/login.html')
 const adminPage = createPage('admin/admin.html')
+const createTourPage = createPage('create/create.html')
+const editPage = createPage('edit/edit.html')
+const tourPage = createPage('tour/tour.html')
 
 app.get('/', (req, res) =>{
     res.send(indexPage)
@@ -44,6 +47,20 @@ app.get('/admin', (req, res) =>{
         res.send(adminPage)
     
 })
+
+app.get('/create', (req, res)=> {
+    res.send(createTourPage)
+})
+
+app.get('/edit', (req, res) => {
+    res.send(editPage)
+})
+
+app.get('/tour/:id', (req, res) => {
+    res.send(tourPage)
+})
+
+
 
 
 const PORT = process.env.PORT || 8080;
